@@ -1,0 +1,14 @@
+2025-01-15 10:35:44 | INFO     | bot.logging_config          | Logging initialised | log_file=logs/trading_bot_20250115_103544.log
+2025-01-15 10:35:44 | INFO     | bot.client                  | BinanceFuturesClient ready | base_url=https://testnet.binancefuture.com
+2025-01-15 10:35:44 | INFO     | cli                         | CLI started | base_url=https://testnet.binancefuture.com log_file=logs/trading_bot_20250115_103544.log
+2025-01-15 10:35:44 | INFO     | bot.orders                  | Order requested | symbol=ETHUSDT side=SELL type=LIMIT qty=0.01 price=3200.00 stop=None
+2025-01-15 10:35:44 | DEBUG    | bot.validators              | Symbol validated: ETHUSDT
+2025-01-15 10:35:44 | DEBUG    | bot.validators              | Side validated: SELL
+2025-01-15 10:35:44 | DEBUG    | bot.validators              | Order type validated: LIMIT
+2025-01-15 10:35:44 | DEBUG    | bot.validators              | Quantity validated: 0.01
+2025-01-15 10:35:44 | DEBUG    | bot.validators              | Price validated: 3200.00
+2025-01-15 10:35:44 | INFO     | bot.validators              | Order params validated | symbol=ETHUSDT side=SELL type=LIMIT qty=0.01 price=3200.00 stop=None
+2025-01-15 10:35:44 | INFO     | bot.orders                  | Submitting order params: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.01', 'price': '3200.00', 'timeInForce': 'GTC'}
+2025-01-15 10:35:44 | DEBUG    | bot.client                  | → POST https://testnet.binancefuture.com/fapi/v1/order | params={'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.01', 'price': '3200.00', 'timeInForce': 'GTC', 'timestamp': 1736934944231, 'signature': '***redacted***'}
+2025-01-15 10:35:45 | DEBUG    | bot.client                  | ← POST /fapi/v1/order | status=200 | body={"orderId":4083512977,"symbol":"ETHUSDT","status":"NEW","clientOrderId":"x-xcKtGhcub12345a78bc","price":"3200.00","avgPrice":"0.00","origQty":"0.01","executedQty":"0.00","cumQty":"0.00","cumQuote":"0.00000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","updateTime":1736934945019}
+2025-01-15 10:35:45 | INFO     | bot.orders                  | Order accepted | orderId=4083512977 status=NEW executedQty=0.00 avgPrice=0.00

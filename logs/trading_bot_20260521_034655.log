@@ -1,0 +1,10 @@
+2026-05-21 03:46:55 | INFO     | bot.logging_config        | Logging initialised | log_file=logs/trading_bot_20260521_034655.log
+2026-05-21 03:46:55 | INFO     | __main__                  | CLI started | base_url=https://testnet.binancefuture.com log_file=logs/trading_bot_20260521_034655.log
+2026-05-21 03:46:55 | INFO     | bot.client                | BinanceFuturesClient ready | base_url=https://testnet.binancefuture.com
+2026-05-21 03:46:55 | INFO     | bot.orders                | Order requested | symbol=BTCUSDT side=BUY type=LIMIT qty=0.001 price=None stop=None
+2026-05-21 03:46:55 | DEBUG    | bot.validators            | Symbol validated: BTCUSDT
+2026-05-21 03:46:55 | DEBUG    | bot.validators            | Side validated: BUY
+2026-05-21 03:46:55 | DEBUG    | bot.validators            | Order type validated: LIMIT
+2026-05-21 03:46:55 | DEBUG    | bot.validators            | Quantity validated: 0.001
+2026-05-21 03:46:55 | WARNING  | __main__                  | Validation error: Validation failed:
+  • '--price' is required for LIMIT orders.

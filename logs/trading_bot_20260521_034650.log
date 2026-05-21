@@ -1,0 +1,2 @@
+2026-05-21 03:46:50 | INFO     | bot.logging_config        | Logging initialised | log_file=logs/trading_bot_20260521_034650.log
+2026-05-21 03:46:50 | INFO     | __main__                  | CLI started | base_url=https://testnet.binancefuture.com log_file=logs/trading_bot_20260521_034650.log

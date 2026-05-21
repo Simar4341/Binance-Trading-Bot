@@ -1,0 +1,13 @@
+2026-05-21 09:37:08 | INFO     | bot.logging_config        | Logging initialised | log_file=logs\trading_bot_20260521_093708.log
+2026-05-21 09:37:08 | INFO     | __main__                  | CLI started | base_url=https://testnet.binancefuture.com log_file=logs\trading_bot_20260521_093708.log
+2026-05-21 09:37:08 | INFO     | bot.client                | BinanceFuturesClient ready | base_url=https://testnet.binancefuture.com
+2026-05-21 09:37:08 | INFO     | bot.orders                | Order requested | symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None stop=None
+2026-05-21 09:37:08 | DEBUG    | bot.validators            | Symbol validated: BTCUSDT
+2026-05-21 09:37:08 | DEBUG    | bot.validators            | Side validated: BUY
+2026-05-21 09:37:08 | DEBUG    | bot.validators            | Order type validated: MARKET
+2026-05-21 09:37:08 | DEBUG    | bot.validators            | Quantity validated: 0.001
+2026-05-21 09:37:08 | INFO     | bot.validators            | Order params validated | symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None stop=None
+2026-05-21 09:37:08 | INFO     | bot.orders                | Submitting order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-05-21 09:37:08 | DEBUG    | bot.client                | → POST https://testnet.binancefuture.com/fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1779336428702, 'signature': '***redacted***'}
+2026-05-21 09:37:09 | DEBUG    | bot.client                | ← POST /fapi/v1/order | status=200 | body={"orderId":13170882359,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"Tpp0wRuDeWCcQtLkYEYdud","price":"0.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updat
+2026-05-21 09:37:09 | INFO     | bot.orders                | Order accepted | orderId=13170882359 status=NEW executedQty=0.0000 avgPrice=0.00
